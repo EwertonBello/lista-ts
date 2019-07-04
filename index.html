@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista TS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+</head>
+<body>
+    <nav class="panel">
+        <p class="panel-heading">
+            Lista TS
+        </p>
+        <div class="panel-block" style="display: block;">
+            <div class="field">
+                <div class="control">
+                    <input id="iptItem" class="input is-info" type="text" placeholder="Insira o nome do ítem">
+                </div>
+            </div>
+            <a id="btnAdd" class="button is-info is-outlined">Adicionar</a>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Feito</th>
+                    <th>Objetivo</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+                <tr>
+                    <th><input id="ch1" type="checkbox"></th>
+                    <td class="item">Comprar Arroz</td>
+                    <th><a id="btn1" class="button is-danger">Excluir</a></th>
+                </tr>
+                <tr>
+                    <th><input id="ch2" type="checkbox"></th>
+                    <td class="item">Levar o cachorro pra passear</td>
+                    <th><a id="btn2" class="button is-danger">Excluir</a></th>
+                </tr> 
+            </tbody>
+        </table>
+    </nav>
+
+    <script src="main.js"></script><!-- Arquivo transpilado -->
+
+    <style>
+        .feito { text-decoration: line-through; }/*Riscar itens da lista*/
+    </style>
+
+</body>
+</html>
